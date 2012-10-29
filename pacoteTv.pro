@@ -13,11 +13,11 @@ inicio :- 	procurar(Pacote),
 			desfazerTodasRespostas.
 
 /* Casos */
+procurar(completo) 			:- completo, !.
+procurar(mega_esportes) 	:- mega_esportes, !. 	/*filmes+luta+futebol*/
 procurar(mega)				:- mega, !. 			/*futebol+filmes*/
 procurar(mega_adulto)		:- mega_adulto, !. 		/*filmes + adulto*/
-procurar(mega_esportes) 	:- mega_esportes, !. 	/*filmes+luta+futebol*/
 procurar(basico_pro) 		:- basico_pro, !. 		/*filmes*/
-procurar(completo) 			:- completo, !.
 procurar(basico).
 
 /* Regras para identificacao de pacotes */
